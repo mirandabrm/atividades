@@ -1,0 +1,41 @@
+td{
+    border-radius: 8px;
+}
+
+.data1, .data2, .data3, .data4{
+
+    width: 100px;
+    text-align: center;
+}
+.data1{
+    background-color: rgb(202, 202, 202);
+}
+
+.data2{
+    background-color: rgb(240, 128, 180);
+}
+
+.data3{
+    background-color: rgb(228, 223, 150);
+}
+
+.data4{
+    background-color: rgb(159, 231, 91);
+}
+
+.botao{
+    border: 0px;    
+}
+
+.buttConfig{
+    border-radius: 8px;
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    
+}
+
+.buttConfig:hover {
+    background-color: black;
+    color: white;
+}

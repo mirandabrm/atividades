@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+       
+
+  <table>
+    <tr>
+        <th colspan="2"><h1>Log in</h1></th>
+        <img src="https://blog.brkambiental.com.br/wp-content/uploads/2019/03/original-a34c7e7fc8effc0bf521806665975160.jpg" style="float: left;width: 460px;height: 440px;">
+    </tr>
+
+    <tr>
+        <td colspan="2">Log in to your account to upload or download pictures, videos or music.</td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><input  style="width: 220px;height:10" type="email" name="" id=""></td>
+    </tr>
+    <tr>
+        <td><a href="">Forgot password?</a></td>
+        <td><input class="botao" type="button" value="Next  ->"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input style="width: 220px;height:10" type="password"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><p class="opcao">Or log with</p></td>
+    </tr>
+    <tr>
+        <td><script>
+          var finished_rendering = function() {
+            console.log("finished rendering plugins");
+            var spinner = document.getElementById("spinner");
+            spinner.removeAttribute("style");
+            spinner.removeChild(spinner.childNodes[0]);
+          }
+          FB.Event.subscribe('xfbml.render', finished_rendering);
+          </script>
+          <div id="spinner"
+              style="
+                  background: #4267b2;
+                  border-radius: 5px;
+                  color: white;
+                  height: 30px;
+                  text-align: center;
+                  width: 150px;">
+              Facebook
+              <div
+              class="fb-login-button"
+              data-max-rows="1"
+              data-size="large"
+              data-button-type="continue_with"
+              data-use-continue-as="true"
+              ></div>
+          </div>  </td>
+
+
+        <td><div id="my-signin2"></div>
+            <script>
+              function onSuccess(googleUser) {
+                console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+              }
+              function onFailure(error) {
+                console.log(error);
+              }
+              function renderButton() {
+                gapi.signin2.render('my-signin2', {
+                  'scope': 'profile email',
+                  'width': 150,
+                  'height': 30,
+                  'longtitle': true,
+                  'theme': 'dark',
+                  'onsuccess': onSuccess,
+                  'onfailure': onFailure
+                });
+              }
+            </script>
+          
+            <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><p class="sing">Don't have an account yet?<a href="">Sing up</a></p></td>
+    </tr>
+
+  </table>
+    </main>
+</body>
+</html>

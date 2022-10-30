@@ -1,0 +1,121 @@
+
+aside, main, footer{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+aside {
+    background-color: rgb(236, 236, 236);
+    border-radius: 7px;
+}
+
+main {
+    background-color: white;
+}
+aside, main {
+    padding: 32px;
+    height: 385px;
+}
+
+footer {
+    color: white;
+    background-color: #EE4D38;
+    border-radius: 7px;;
+    padding: 24px;
+    height: 150px;
+    align-items: center;
+}
+
+.void{
+    width: 30px;
+}
+
+.botao{
+    background-color: white;
+    border-radius: 4px;
+
+}
+
+.insta{
+    text-align: center;
+}
+
+.opcao:hover{
+    box-shadow: 0px 1px black;
+}
+
+.load{
+    color: red;
+}
+
+.plano{
+    color: rgb(10, 62, 141);
+    background-color: #EE4D38;
+    border-radius: 4px;
+}
+
+.cancelar{
+    color: white;
+    background-color: #EE4D38;
+    border-radius: 4px;
+}
+
+/************
+Icones
+*************/
+.logo{
+    width: 80px;
+}
+
+.usuario{
+    width: 40px;
+}
+
+/********
+NAVEGAÇÃO
+*********/
+
+.navbar{
+
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.navbar li{
+    padding: 12px;
+    text-align: left;
+
+}
+
+.navbar a {
+    font-family: sans-serif;
+    color: gray;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    border-left: orange;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media all and (min-width:768px){
+
+
+    #container{
+        display: flex;
+
+    }
+
+    main{
+        flex: 75%
+    }
+
+    aside{
+        flex: 25%;
+    }
+    footer{
+        flex: 25%;
+    }
+}

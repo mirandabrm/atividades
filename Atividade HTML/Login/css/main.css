@@ -1,0 +1,25 @@
+th {
+    text-align: left;
+    
+}
+
+td {
+   width: 170px; 
+   height: 47px;
+}
+
+.opcao {
+    text-align: center;
+}
+
+.sing {
+    text-align: center;
+}
+
+.botao{
+    color: white;
+    background-color: rgb(19, 50, 230);
+    height: 50px;
+    width: 100px;
+    border-radius: 7px;
+}
